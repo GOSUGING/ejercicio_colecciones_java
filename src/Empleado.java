@@ -74,10 +74,14 @@ public class Empleado {
         this.puesto = puesto;
     }
 
-    @Override
-    public String toString() {
-        return "Empleado{" + "rut=" + rut + ", nombreEmpleado=" + nombreEmpleado + ", genero=" + genero + ", anio=" + anio + ", edad=" + edad + ", puesto=" + puesto + '}';
-    }
+   public void mostrarInformacion() {
+       System.out.println("Rut del empleado: " + this.getRut());
+       System.out.println("Nombre del empleado: " + this.getNombreEmpleado());
+       System.out.println("Genero del empleado: " + this.getGenero());
+       System.out.println("Años de experiencia: " + this.getAnio());
+       System.out.println("Edad del empleado: " + this.getEdad());
+       puesto.mostrarPuesto();
+   }
     
     
 }

@@ -37,7 +37,7 @@ public class Empresa {
      
      public void listarEmpleados() {
          for (Empleado emple : listaEmpleados) {
-             System.out.println(emple.toString());
+             emple.mostrarInformacion();
          }
      }
      

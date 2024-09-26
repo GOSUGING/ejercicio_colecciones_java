@@ -35,9 +35,8 @@ public class Puesto {
         this.nombrePuesto = nombrePuesto;
     }
 
-    @Override
-    public String toString() {
-        return "Puesto{" + "codigo=" + codigo + ", nombrePuesto=" + nombrePuesto + '}';
+    public void mostrarPuesto() {
+        System.out.println("ID del puesto: " + this.getCodigo());
+        System.out.println("Nombre del puesto: " + this.getNombrePuesto());
     }
-   
 }
